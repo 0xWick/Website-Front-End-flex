@@ -1,0 +1,19 @@
+/* Wick.css */
+
+/* Align Icon to Left */
+
+#what .items .item{
+    display: flex;
+}
+
+/* Position icon */
+
+#what .items .item i {
+    margin-right: 0.2rem;
+    align-self: center;
+    margin: bottom;
+}
+
+#contact .map {
+    flex: 2;
+}

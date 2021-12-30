@@ -1,0 +1,247 @@
+/* Wick.css */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    /* To easily manage content in css */
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    /* because we set 0 in * */
+    margin: 0.75rem 0;
+}
+
+/* ***-----Utility Classes--------*** */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-primary {
+    /* main color for scheme */
+    color: #93cb52;
+} 
+
+.text-center {
+    text-align: center;
+}
+
+
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1; /* Distance b/w lines */
+}
+
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1; /* Distance b/w lines */
+}
+
+.list {
+    margin: 0.7rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+
+.py-1 {padding: 1.5rem 0;}
+.py-2 {padding: 2rem 0;}
+.py-3 {padding: 3rem 0;}
+
+.p-1 {padding: 1.5rem;}
+.p-2 {padding: 2rem;}
+.p-3 {padding: 3rem;}
+
+.bg-light {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.bg-primary {
+    background: #93cb52;
+    color: white;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #93cb52;
+    padding: 0.55rem;
+    border: none; /* Used Later when its displayed as a link*/
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #5e8b2b;
+}
+
+.btn-black {
+    background-color: #333;
+    color: white;
+}
+
+/* ***-----NAVBAR--------*** */
+
+#navbar {
+    display: flex; 
+    position: sticky; /* Sticky NAvbar */
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    justify-content: space-between; /* We need space-bw Heading & Others*/
+    z-index: 1; /* Priority in 3d space, like bring to front etc */
+    padding: 1rem;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center; /*ALigns Vertically */
+    justify-content: space-between;
+    list-style: None; /* Remove pointers(circles, arrows etc) with list elements */
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+    /* Color applies to padding */
+    background: #93cb52;
+    border-radius: 5px;
+}
+
+/* ***-------ShowCase--------*** */
+
+#showcase {
+    background: #333 url('../resources/image_resources/showcase.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0rem 2rem;
+    /* Overlay (optional) */
+    position: absolute;
+    top: 59px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* Section-2 : What We Do */
+
+#what .items {
+    display: flex;
+    padding: 1rem;
+  
+}
+
+#what .items .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i {
+    background-color: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Section-3: Who We Are */
+
+#who {
+    display: flex;
+}
+
+#who div{
+    flex: 1;
+}
+
+#who .who-img {
+    background: url("../resources/image_resources/people.jpg") no-repeat center center/cover;
+
+}
+
+
+/* Section-4 : Clients */
+
+#clients .items {
+    display: flex;
+}
+
+#clients .items img {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+/* Section-5 : Contact */
+
+#contact {
+    display: flex;
+}
+
+#contact .map, #contact .contact-form {
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+/* To put labels on top of input */
+#contact .contact-form label {
+    display: block;
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+    padding: 0.5rem;
+    width:100%;
+    margin:0.1rem;
+}
+
+#contact .btn {
+    margin: auto;
+    width: 100%;
+}
